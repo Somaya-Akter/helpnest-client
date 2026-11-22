@@ -34,7 +34,7 @@ export default function Home() {
         setLoading(true);
         setError("");
 
-        const response = await fetch("http://localhost:5000/posts", {
+        const response = await fetch("https://helpnest-server.onrender.com/posts", {
           cache: "no-store",
         });
 

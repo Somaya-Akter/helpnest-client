@@ -22,7 +22,7 @@ export default function PostDetailsPage() {
         setError("");
 
         const response = await fetch(
-          `http://localhost:5000/posts/${id}`,
+          `https://helpnest-server.onrender.com/posts/${id}`,
           {
             cache: "no-store",
           }

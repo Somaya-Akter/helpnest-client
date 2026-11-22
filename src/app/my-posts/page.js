@@ -26,7 +26,7 @@ export default function MyPostsPage() {
 
     const loadPosts = async () => {
       try {
-        const response = await fetch("http://localhost:5000/my-posts", {
+        const response = await fetch("https://helpnest-server.onrender.com/my-posts", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -68,7 +68,7 @@ export default function MyPostsPage() {
       const token = localStorage.getItem("helpnest_token");
 
       const response = await fetch(
-        `http://localhost:5000/posts/${id}`,
+        `https://helpnest-server.onrender.com/posts/${id}`,
         {
           method: "DELETE",
           headers: {

@@ -53,7 +53,7 @@ export default function AddPostPage() {
     try {
       const token = localStorage.getItem("helpnest_token");
 
-      const response = await fetch("http://localhost:5000/posts", {
+      const response = await fetch("https://helpnest-server.onrender.com/posts", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

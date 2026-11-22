@@ -48,7 +48,7 @@ export default function PostsPage() {
         setError("");
 
         const response = await fetch(
-          "http://localhost:5000/posts",
+          "https://helpnest-server.onrender.com/posts",
           {
             cache: "no-store",
           }

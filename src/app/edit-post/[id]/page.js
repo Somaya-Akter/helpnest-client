@@ -39,7 +39,7 @@ export default function EditPostPage() {
     const loadPost = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/posts/${id}`
+          `https://helpnest-server.onrender.com/posts/${id}`
         );
 
         const post = await response.json();
@@ -109,7 +109,7 @@ export default function EditPostPage() {
       const token = localStorage.getItem("helpnest_token");
 
       const response = await fetch(
-        `http://localhost:5000/posts/${id}`,
+        `https://helpnest-server.onrender.com/posts/${id}`,
         {
           method: "PUT",
           headers: {
